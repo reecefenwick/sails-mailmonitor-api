@@ -24,8 +24,6 @@ module.exports.findAll = function(req, res) {
 module.exports.findOne = function(req, res) {
     var Mailbox = sails.models.mailbox;
 
-
-    console.log(req.params.id);
     Mailbox
         .findOne({
             id: req.params.id
