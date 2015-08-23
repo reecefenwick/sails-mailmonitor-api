@@ -34,6 +34,10 @@ module.exports = {
     history: {
       collection: 'history',
       via: 'mailbox'
+    },
+    alerts: {
+      collection: 'alerts',
+      via: 'mailbox'
     }
   }
 };

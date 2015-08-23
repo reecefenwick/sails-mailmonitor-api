@@ -14,7 +14,7 @@ module.exports = {
           required: true
         },
         threshold: {
-          type: 'number',
+          type: 'integer',
           required: true
         },
         email: {
@@ -23,13 +23,16 @@ module.exports = {
           defaultsTo: null
         },
         mobile: {
-          type: 'number',
+          type: 'string',
           defaultsTo: null
         },
         lastWarning: {
           type: 'datetime',
           required: false,
           defaultsTo: null
-        }
+        },
+      mailbox: {
+          model: 'mailbox'
+      }
       }
   };
