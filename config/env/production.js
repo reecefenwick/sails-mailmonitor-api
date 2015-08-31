@@ -7,5 +7,14 @@ module.exports = {
   port: 80,
   log: {
     level: 'info'
+  },
+  imap: {
+    host: 'gmail.com',
+    port: 993,
+    tls: true
+  },
+  smtp: {
+    host: "smlsmtp.suncorpmetway.net",
+    port: 25
   }
 };

@@ -11,12 +11,13 @@ module.exports = {
     connection: 'memory',
     migrate: 'drop'
   },
-  hooks: {
-    csrf: false,
-    grunt: false,
-    i18n: false,
-    pubsub: false,
-    session: false,
-    views: false
+  imap: {
+    host: 'imap.gmail.com',
+    port: 993,
+    tls: true
+  },
+  smtp: {
+    host: "smlsmtp.suncorpmetway.net",
+    port: 25
   }
 };

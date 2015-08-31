@@ -7,9 +7,11 @@
 
 module.exports.findAll = function(req, res) {
     var Mailbox = sails.models.mailbox;
+    var query = {};
+    var select = {};
 
     Mailbox
-        .find()
+        .find(query, select)
         .populate('history')
         .populate('alerts')
         .then(function(mailboxes) {
